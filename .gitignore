@@ -9,9 +9,6 @@
 
 # Sensitive Info
 venv
-accountinfo.py
-/src/database/BETA.db
-/src/database/subscriptions.db
 
 # "compiled" files
 *.pyc
@@ -19,6 +16,11 @@ accountinfo.py
 # IDE files
 .idea/
 .vscode/settings.json
+
+# docker files
+environments/*.env
+!environments/example.env
+copy.sh
 
 # Test files
 /src/test.py
