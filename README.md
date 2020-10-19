@@ -1,16 +1,6 @@
 # Alert Bot
 
 This bot allows users to subscribe to certain posts based on the title, body, link, post author, etc. The bot will notify the user when it finds posts that matches what the user specifies.
-This bot is excellent to keep track of subreddits that post links to sales or freebies!
-[Formerly known as /u/sales__bot for /r/buildapcsales.](https://www.reddit.com/r/buildapcsales/comments/3u2tg5/buildapcsales_bot/)
-
-
-## Donate
-If you really like the bot, please consider making a donation for my time. Thanks! 
-
-[![Donate](https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KYGVTRSAMLKJ4)
-
-
 
 # How It Works
 
@@ -18,7 +8,7 @@ If you really like the bot, please consider making a donation for my time. Thank
 
 ## To subscribe
 
-Send a [private message to /u/Alert_Bot](https://www.reddit.com/message/compose/?to=alert_bot) with the body of the message specifying what you want the bot to look out for. The body of the message is what the bot cares about, so the following examples should be in the body of the message. The subject of the message can be anything, but I recommend making it descriptive to you, so you can see what the message is about at a quick glance.
+Send a private message with the body of the message specifying what you want the bot to look out for. The body of the message is what the bot cares about, so the following examples should be in the body of the message. The subject of the message can be anything, but I recommend making it descriptive to you, so you can see what the message is about at a quick glance.
 Essentially there is the subscribe action, and a list of parameters. Parameter List:
 
 ### Parameter Values
@@ -84,11 +74,11 @@ The ***-redditor*** parameter is used to filter posts from a subreddit by a spec
 
 **Examples:**
 
-*subscribe -title cats -redditor tylerbrockett -subreddit videos*
-- Watches for posts containing 'cats' in the title, by the user /u/tylerbrockett, in the subreddit /r/videos
+*subscribe -title cats -redditor somerandomredditor -subreddit videos*
+- Watches for posts containing 'cats' in the title, by the user /u/somerandomredditor, in the subreddit /r/videos
 
-*subscribe -title cats -redditor tylerbrockett, made-up-name -subreddit videos*
-- Watches for posts containing 'cats' in the title, by the user /u/tylerbrockett ***OR*** /u/made-up-name, in the subreddit /r/videos
+*subscribe -title cats -redditor somerandomredditor, made-up-name -subreddit videos*
+- Watches for posts containing 'cats' in the title, by the user /u/somerandomredditor ***OR*** /u/made-up-name, in the subreddit /r/videos
 
 **Aliases:**
 * -redditor
@@ -141,11 +131,11 @@ The ***-ignore-redditor*** parameter is used to ignore posts from a subreddit by
 
 **Examples:**
 
-*subscribe -title cats -ignore-redditor tylerbrockett -subreddit videos*
-- Watches for posts containing 'cats' in the title, ***NOT*** by the user /u/tylerbrockett, in the subreddit /r/videos
+*subscribe -title cats -ignore-redditor somerandomredditor -subreddit videos*
+- Watches for posts containing 'cats' in the title, ***NOT*** by the user /u/somerandomredditor, in the subreddit /r/videos
 
-*subscribe -title cats -redditor tylerbrockett, made-up-name -subreddit videos*
-- Watches for posts containing 'cats' in the title, ***NOT*** by the user /u/tylerbrockett ***OR*** /u/made-up-name, in the subreddit /r/videos
+*subscribe -title cats -redditor somerandomredditor, made-up-name -subreddit videos*
+- Watches for posts containing 'cats' in the title, ***NOT*** by the user /u/somerandomredditor ***OR*** /u/made-up-name, in the subreddit /r/videos
 
 **Aliases:**
 * -ignore-redditor
@@ -158,7 +148,7 @@ The ***-ignore-redditor*** parameter is used to ignore posts from a subreddit by
 
 The ***-subreddit*** parameter specifies which subreddits to look in for posts matching your criteria. A list of subreddits can be specified, separated by a comma, and the bot will look in all of them.    
 ***Note:*** Also note that the '/r/' or 'r/' prefixes for subreddits will be stripped, so it doesn't matter if you include it or not.    
-***Also Note:*** If no subreddit is specified here, /r/buildapcsales will be used by default, because that is the subreddit that gave this bot life to begin with. 
+***Also Note:*** If no subreddit is specified here, /r/GunAccessoriesForSale will be used by default, because that is the subreddit that gave this bot life to begin with. 
 
 **Examples:**
 
@@ -180,8 +170,8 @@ By default, the bot will ignore posts that are marked as NSFW. Some subreddits u
 
 **Examples:**
 
-*subscribe -title CPU, Intel i7 -subreddit BuildAPCSales -nsfw*
-- Searches for posts containing 'CPU' and 'Intel i7' in the title of the posts, ***including*** the expired sales.
+*subscribe -title [WTS], Vortex -subreddit GunAccessoriesForSale -nsfw*
+- Searches for posts containing '[WTS]' and 'Vortex' in the title of the posts, ***including*** the expired sales.
 
 **Aliases:**
 * -nsfw
@@ -212,17 +202,3 @@ If you send a message that doesn't follow the above guidelines, you will get an 
 
 ## Issues / things to watch out for
 1. Be careful with how you are specifying your subscriptions. It is EXTREMELY easy to wind up with subscriptions that overlap, and thus you're being notified twice for the same post.
-
-## Edits
-**11/24/15 -** A ***HUGE*** thanks goes out to /u/he_must_workout for donating a Raspberry Pi (in the form of PayPal) for the bot! The Reddit community is truly amazing!
-
-## Developer Info
-Developer Name: Tyler Brockett 
-
-Bot Code: [Github Repository](https://github.com/tylerbrockett/Alert-Bot-Reddit) 
-
-Bot Subreddit: [/r/Alert_Bot](https://reddit.com/r/Alert_Bot) 
-
-Reddit: [/u/tylerbrockett](https://reddit.com/u/tylerbrockett) 
-
-Email: [My Email](mailto:tylerbrockett@gmail.com)
